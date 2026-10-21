@@ -1,3 +1,9 @@
 Port 22 open - probably -> ssh
 Port 80 open - probably -> http
 Port 9929 open - probably -> Unknow
+Port 631 open - probably -> ipp
+Port 3306 open - probably -> mysql
+Port 5432 open - probably -> postgresql
+Port 46189 open - probably -> Unknow
+Port 49374 open - probably -> Unknow
+Port 52829 open - probably -> Unknow

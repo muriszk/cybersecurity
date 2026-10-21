@@ -3,6 +3,7 @@ import socket
 target = input("Type the IP of your domain: ")
 savePath = './cybersecurity/portScanner/log.txt'
 
+
 with open(savePath, 'a') as file:
 
     for port in range(0,65536):
