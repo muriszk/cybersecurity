@@ -13,6 +13,11 @@ with open(savePath, 'a') as file:
         result = client.connect_ex((target, port))
 
         if result == 0:
-            print(f"Port {port} open", file = file)
+            try:
+                service = socket.getservbyport(port)
+            except:
+                service = "Unknow"
+
+            print(f"Port {port} open - probably -> {service}", file = file)
 
         client.close()

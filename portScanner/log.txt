@@ -1,7 +1,3 @@
-Port 631 open
-Port 3306 open
-Port 5432 open
-Port 36812 open
-Port 46189 open
-Port 49374 open
-Port 52829 open
+Port 22 open - probably -> ssh
+Port 80 open - probably -> http
+Port 9929 open - probably -> Unknow
