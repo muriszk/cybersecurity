@@ -1,17 +1,18 @@
 import socket 
 
 alvo = input("Type the IP of your domain: ")
+savePath = './cybersecurity/portScanner/log.txt'
 
-for port in range(5000,6000):
-    cilent = socket.socket()
+with open(savePath, 'a') as file:
 
-    cilent.settimeout(1)
+    for port in range(5000,6000):
+        client = socket.socket()
 
-    result = cilent.connect_ex((alvo, port))
+        client.settimeout(1)
 
-    if result == 0:
-        print(f"Port {port} open")
-    else:
-        print(f"Port {port} closed")
+        result = client.connect_ex((alvo, port))
 
-    cilent.close()
+        if result == 0:
+            print(f"Port {port} open", file = file)
+
+        client.close()
